@@ -28,7 +28,7 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <header className="flex flex-row">
+                <header className="flex flex-row justify-between">
                     <Image
                         className="dark:invert"
                         src="/hamburger.svg"
@@ -37,16 +37,46 @@ export default function RootLayout({
                         height={24}
                         priority
                     />
-                    <h1 className="text-3xl font-bold underline">DigiCook</h1>
-                    <Image
-                        className="dark:invert"
-                        src="/account.svg"
-                        alt="digicook account"
-                        width={24}
-                        height={24}
-                        priority
-                    />
+                    <h1 className="text-3xl font-bold">DigiCook</h1>
+
+                    <a href="/account">
+                        <Image
+                            className="dark:invert"
+                            src="/account.svg"
+                            alt="digicook account"
+                            width={24}
+                            height={24}
+                            priority
+                        />
+                    </a>
                 </header>
+                <nav>
+                    <ul>
+                        <a href="/breakfast">
+                            <li>Breakfast</li>
+                        </a>
+
+                        <a href="/lunch">
+                            <li>Lunch</li>
+                        </a>
+
+                        <a href="/dinner">
+                            <li>Dinner</li>
+                        </a>
+
+                        <a href="/snacks">
+                            <li>Snacks</li>
+                        </a>
+
+                        <a href="/drinks">
+                            <li>Drinks</li>
+                        </a>
+
+                        <a href="/spices">
+                            <li>Spices</li>
+                        </a>
+                    </ul>
+                </nav>
                 <section className="border-white border px-8 py-10 rounded-md">
                     {children}
                 </section>
