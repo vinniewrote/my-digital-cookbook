@@ -29,14 +29,22 @@ export default function RootLayout({
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <header className="flex flex-row justify-between">
-                    <Image
+                    {/* <Image
                         className="dark:invert"
                         src="/hamburger.svg"
                         alt="digicook hamburger"
                         width={24}
                         height={24}
                         priority
-                    />
+                    /> */}
+                    <div className="burger-6">
+                        <input type="checkbox" id="ck-6" />
+                        <label htmlFor="ck-6" className="toggle">
+                            <div className="bars" id="bar1"></div>
+                            <div className="bars" id="bar2"></div>
+                            <div className="bars" id="bar3"></div>
+                        </label>
+                    </div>
                     <h1 className="text-3xl font-bold">DigiCook</h1>
 
                     <a href="/account">
