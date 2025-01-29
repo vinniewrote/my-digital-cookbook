@@ -1,5 +1,10 @@
 import './globals.css'
+import CreateRecipeForm from './forms/createRecipe'
 
 export default function Home() {
-    return <div>Homepage location</div>
+    return (
+        <div>
+            <CreateRecipeForm />
+        </div>
+    )
 }
